@@ -22,12 +22,10 @@ def Sort(Lista):
         # counter(Licznik). Otherwise continues. If counter is 0 that means no change and returns sorted list.
         
         Licznik = 0
-        for i in range(0,len(Lista)-1):
+        for i in range(0, len(Lista)-1):
             if Lista[i] > Lista[i + 1]:
                 Lista[i], Lista[i + 1] = Lista[i + 1], Lista[i]
                 Licznik =+ 1
-            else:
-                continue
         if Licznik == 0:
             return(Lista)
 
