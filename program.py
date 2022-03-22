@@ -14,14 +14,14 @@ print("Lista Wczesniej: ",MojaLista)
 
 def Sort(Lista):
     while True:
-        Licznik = 0
-        
         #Polish: Przechodzi przez każdą liczbę w liscie. Jeżeli numer w liscie jest większy niż następny numer, zamienia miejsca
         # liczb i zwiększa licznik. W przeciwnym razie kontynuuje. Jeżeli licznik jest 0 to znaczy, że nic się nie zmieniło i
         # zwraca wysortowaną listę.
         
-        #English: Goes trough every number in list. If number in list is greater then number after, swaps and inrement 
+        #English: Goes trough every number in list. If number in list is greater then number after, swaps and inrement
         # counter(Licznik). Otherwise continues. If counter is 0 that means no change and returns sorted list.
+        
+        Licznik = 0
         for i in range(0,len(Lista)-1):
             if Lista[i] > Lista[i + 1]:
                 Lista[i], Lista[i + 1] = Lista[i + 1], Lista[i]
