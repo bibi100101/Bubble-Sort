@@ -27,7 +27,7 @@ def Sort(Lista):
                 Lista[i], Lista[i + 1] = Lista[i + 1], Lista[i]
                 Licznik =+ 1
         if Licznik == 0:
-            return(Lista)
+            return Lista
 
 #Translation: List after
 print("\nLista pozniej: ", Sort(MojaLista))
